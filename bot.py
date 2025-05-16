@@ -188,5 +188,5 @@ async def pibblefact_slash(interaction: discord.Interaction):
     except FileNotFoundError:
         await interaction.response.send_message("🐶 *whimper* (No encontré mis facts... ¿Me das uno?)")
 
-# 🔒 Importante: pon tu token real aquí o usa variables de entorno seguras
-bot.run(discord_token)
+if __name__ == "__main__":
+    bot.run(discord_token)
